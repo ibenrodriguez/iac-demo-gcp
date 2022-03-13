@@ -1,22 +1,15 @@
 # iac-demo-gcp
-Demo repo with Terraform code to make a RedHat Linux Compute Virtual Machine on Google Cloud Platform
-
-
-Need to update the following processes to work with terraform cloud workspaces…
-
-GitHub - hashicorp/terraform-provider-google: Terraform Google Cloud Platform provider
+- Demo repo with Terraform code to make a RedHat Linux Compute Virtual Machine on Google Cloud Platform
+- Need to update the following processes to work with terraform cloud workspaces…
+- GitHub - hashicorp/terraform-provider-google: Terraform Google Cloud Platform provider
 
 # GCP Edition
+- Getting started with Terraform on Google Cloud  |  Google Cloud Platform Community 
+- GitHub - terraform-google-modules/terraform-google-bootstrap: A module for bootstrapping Terraform usage in a new GCP organization.
+- terraform-google-modules/terraform-google-bootstrap 
+- Find, Document, and test the terraform code to build and destroy the following:
 
-Getting started with Terraform on Google Cloud  |  Google Cloud Platform Community 
-
-GitHub - terraform-google-modules/terraform-google-bootstrap: A module for bootstrapping Terraform usage in a new GCP organization.
-
-terraform-google-modules/terraform-google-bootstrap 
-
-Find, Document, and test the terraform code to build and destroy the following:
-
-#Requirements
+# Requirements
 1. GCP account
 1. GCP Project
 1. https://console.cloud.google.com/compute/instances?project=iac-demon
