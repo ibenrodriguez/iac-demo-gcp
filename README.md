@@ -26,12 +26,11 @@ gcloud compute instances create instance-1 --project=iac-demon --zone=us-central
 1. List of resources to be created:
   1. Project
      1. Service Account
-  1. 1 VPC 
-     1. 4 subnets
-        1. Sub1 – 10.0.0.0/24 (should be accessible from internet)
-        1. Sub2 – 10.0.10.0/24 (should be accessible from internet)
-        1. Sub3 – 10.0.20.0/24 (should NOT be accessible from internet)
-        1. Sub4 – 10.0.30.0/24 (should NOT be accessible from internet)
+  1. 1 VPC with 4 subnets
+     1. Sub1 – 10.0.0.0/24 (should be accessible from internet)
+     1. Sub2 – 10.0.10.0/24 (should be accessible from internet)
+     1. Sub3 – 10.0.20.0/24 (should NOT be accessible from internet)
+     1. Sub4 – 10.0.30.0/24 (should NOT be accessible from internet)
    1. 1 compute instance running RedHat in subnet sub1
       1. 20 GB storage
       1. Install HTTP load testing tools Siege, nmap, and iperf3
