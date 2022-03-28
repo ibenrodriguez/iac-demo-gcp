@@ -1,0 +1,65 @@
+flowchart TB
+
+subgraph Application
+    subgraph Service_Project
+        Resources;
+    end
+end
+
+subgraph Google_Cloud_Platform_GCP_Project
+    subgraph Global_Cloud_Load_Balancer
+        Forwarding_Rule;
+        Target_HTTP_Proxy;
+        URL_Map;
+        Backend_Services;
+        Health_Check;
+            subgraph Cloud_Armor_Security_Policy
+                IP_Allow_Deny;
+                Geo;
+                WAF;
+                Custom_Rules_L3_L7;
+            end
+    end
+
+subgraph GCP_Account
+    subgraph Project
+        subgraph GCP_Service_Account
+            117681674265526344599;
+            JSON_Key_Stored_In_TC_Sensitive_Environment_Variable;
+        end
+    end
+end
+
+subgraph VCP
+    subgraph GCP_Zone_US_Central_1-a
+        subgraph Sub1_10.0.0.0/24
+            Redhat_Compute_Intance --> interface1;
+            Redhat_Compute_Intance --> Storage_20GB;           
+        end
+
+        subgraph Sub2_10.0.10.0/24
+            sub2;
+        end
+
+        subgraph Sub3_10.0.20.0/24
+             Redhat_Compute_Intance2_With_Apache --> interface3;
+             Redhat_Compute_Intance2_With_Apache --> Storage_20gb;
+        end
+
+
+        subgraph Sub4_10.0.30.0/24
+            sub4;
+        end
+
+    end
+end
+end
+
+Global_Cloud_Load_Balancer --> Sub3_10.0.20.0/24
+Application --> Global_Cloud_Load_Balancer
+
+
+
+
+
+
