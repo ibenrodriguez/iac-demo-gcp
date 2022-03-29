@@ -14,7 +14,7 @@ resource "google_compute_instance" "vm1" {
   metadata = {
     serial-port-logging-enable = "TRUE"
     serial-port-enable         = true
-    startup-script = "https://raw.githubusercontent.com/ibenrodriguez/iac-demo-gcp/main/init_os_redhat_deps.sh"
+    startup-script-url = "https://raw.githubusercontent.com/ibenrodriguez/iac-demo-gcp/main/init_os_redhat_deps.sh"
   }
 
   network_interface {

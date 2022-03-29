@@ -21,7 +21,7 @@ resource "google_compute_instance_template" "vm2" {
   metadata = {
     serial-port-enable = true
     serial-port-logging-enable = "TRUE"
-    startup-script =  "https://raw.githubusercontent.com/ibenrodriguez/iac-demo-gcp/main/init_os_redhat_deps_apache.sh"
+    startup-script-url  =  "https://raw.githubusercontent.com/ibenrodriguez/iac-demo-gcp/main/init_os_redhat_deps_apache.sh"
   }
   lifecycle {
     create_before_destroy = true
