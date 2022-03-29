@@ -1,5 +1,5 @@
 # iac-demo-gcp
-- this repo URL is: https://github.com/ibenrodriguez/iac-demo-gcp
+- This repo URL is: https://github.com/ibenrodriguez/iac-demo-gcp
 - Demo repo with Terraform code to make a RedHat Linux Compute Virtual Machine on Google Cloud Platform
 - Need to update the following processes to work with terraform cloud workspaces…
 - GitHub - hashicorp/terraform-provider-google: Terraform Google Cloud Platform provider
