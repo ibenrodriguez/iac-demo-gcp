@@ -20,7 +20,7 @@
 3. Terraform Cloud Account
    1. Workspace: Variables | IaC_Demo_GCP | Terraform Cloud https://app.terraform.io/
 4. GitHub Repo
-5. Exmaple Company Name: VZXY
+5. Example Company Name: VZXY
 6. Use smallest machine type that provides sufficient performance. With smallest machine the boot time can be over 20 minutes to run the metadata startup script
    1. Machine types for common workloads, optimized for cost and flexibility
 7. Example CLI GCP SDK for VM creation:

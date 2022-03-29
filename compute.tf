@@ -14,15 +14,7 @@ resource "google_compute_instance" "vm1" {
   metadata = {
     serial-port-logging-enable = "TRUE"
     serial-port-enable         = true
-    startup-script             = <<-EOF1
-      #! /bin/bash
-      set -euo pipefail
-      yum clean all
-      yum --disablerepo="epel" update nss
-      yum update -y
-      yum install -y nmap wget curl iperf3
-      EOF
-    EOF1
+    startup-script = "https://raw.githubusercontent.com/ibenrodriguez/iac-demo-gcp/main/init_os_redhat_deps.sh"
   }
 
   network_interface {

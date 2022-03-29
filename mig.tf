@@ -21,17 +21,7 @@ resource "google_compute_instance_template" "vm2" {
   metadata = {
     serial-port-enable = true
     serial-port-logging-enable = "TRUE"
-    startup-script = <<-EOF1
-      #! /bin/bash
-      set -euo pipefail
-      yum clean all
-      yum update -y
-      yum install -y wget curl iperf3 httpd nmap
-      service httpd start
-      sudo vm_hostname="$(curl -H "Metadata-Flavor:Google" http://169.254.169.254/computeMetadata/v1/instance/name)"
-      sudo echo "Page served from: $vm_hostname" | tee /var/www/html/index.html
-      EOF
-    EOF1
+    startup-script =  "https://raw.githubusercontent.com/ibenrodriguez/iac-demo-gcp/main/init_os_redhat_deps_apache.sh"
   }
   lifecycle {
     create_before_destroy = true
