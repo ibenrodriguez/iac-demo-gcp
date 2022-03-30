@@ -51,3 +51,19 @@ gcloud compute instances create instance-1 --project=iac-demon --zone=us-central
 
 # Notes used for reference
 1. https://cloud.google.com/compute/docs/troubleshooting/vm-startup
+
+# Output
+
+## HTTP Load Balancing Lab
+## Client IP
+
+Your IP address : 35.191.8.9
+
+## Hostname
+Server Hostname: vm-wq7j
+
+## Server Location
+Region and Zone: us-central1-a
+
+[Demo Output](demo_output.png)
+
