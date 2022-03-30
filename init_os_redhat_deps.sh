@@ -1,4 +1,4 @@
 
 yum update -y
-yum install -y nmap wget curl iperf3 siege php
+yum install -y nmap wget curl iperf3 php
 
