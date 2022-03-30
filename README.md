@@ -65,5 +65,5 @@ Server Hostname: vm-wq7j
 ## Server Location
 Region and Zone: us-central1-a
 
-[Demo Output](demo_output.png)
+![Demo Output](demo_output.png)
 
