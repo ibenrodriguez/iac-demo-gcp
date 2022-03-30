@@ -16,7 +16,7 @@
    2. https://console.cloud.google.com/apis/api/compute.googleapis.com/metrics?project=iben-gcp
    3. Be sure the Compute API is enabled or Terraform will throw an error: 
 2. GCP Service Account
-   1. JSON key stored in TC Sensitive Environment Variable 
+   1. JSON key stored in Terraform Cloud Sensitive Environment Variable 
 3. Terraform Cloud Account
    1. Workspace: Variables | IaC_Demo_GCP | Terraform Cloud https://app.terraform.io/
 4. GitHub Repo
@@ -25,7 +25,9 @@
 7. Use smallest machine type that provides sufficient performance. With smallest machine the boot time can be over 20 minutes to run the metadata startup script
    1. Machine types for common workloads, optimized for cost and flexibility
 8. Example CLI GCP SDK for VM creation:
+```
 gcloud compute instances create instance-1 --project=iac-demon --zone=us-central1-a --machine-type=f1.micro --network-interface=network-tier=PREMIUM,subnet=default --maintenance-policy=MIGRATE --service-account=jlkjlkjlkjlk-compute@developer.gserviceaccount.com --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append --create-disk=auto-delete=yes,boot=yes,device-name=instance-1,image=projects/debian-cloud/global/images/debian-10-buster-v20220310,mode=rw,size=10,type=projects/iac-demon/zones/us-central1-a/diskTypes/pd-balanced --no-shielded-secure-boot --shielded-vtpm --shielded-integrity-monitoring --reservation-affinity=any
+```
 # List of resources to be created:
  1. Project
     1. Service Account
