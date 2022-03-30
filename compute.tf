@@ -19,9 +19,9 @@ resource "google_compute_instance" "vm1" {
 
   network_interface {
     subnetwork = google_compute_subnetwork.subnet1.name
-    access_config {
+/*     access_config {
      // Include this section to give the VM an external ip address
-   }
+   } */
   }
 }
 
