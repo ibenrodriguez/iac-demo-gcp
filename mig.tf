@@ -9,6 +9,9 @@ resource "google_compute_instance_template" "vm2" {
   network_interface {
     network    = google_compute_network.gcp-network.id
     subnetwork = google_compute_subnetwork.subnet3.id
+       access_config {
+     // Include this section to give the VM an external ip address
+   }
 
   }
   disk {
