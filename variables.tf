@@ -5,7 +5,6 @@ variable "gcp_project_id" {
 
 variable "gcp_region" {
   description = "GCP Region"
-  default     = "us-central1"
   type        = string
 }
 
@@ -35,7 +34,6 @@ variable "gcp_subnet4" {
 }
 
 variable "gcp_vms_size" {
-  default = "f1-micro"
   type    = string
 }
 variable "gcp_vm_os" {
