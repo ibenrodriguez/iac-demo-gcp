@@ -4,6 +4,12 @@
 - Need to update the following processes to work with terraform cloud workspaces…
 - GitHub - hashicorp/terraform-provider-google: Terraform Google Cloud Platform provider
 
+![Overview Drawing](CCF_IaC_GCP_Demo_Gliffy.png)
+
+## ToDo list
+- add https with letsencrypt https://bitrock.it/blog/lets-encrypt-with-terraform.html
+- integrate with ansible for startup scripts https://docs.ansible.com/ansible/latest/scenario_guides/guide_gce.html
+
 # GCP Edition
 - Getting started with Terraform on Google Cloud  |  Google Cloud Platform Community 
 - GitHub - terraform-google-modules/terraform-google-bootstrap: A module for bootstrapping Terraform usage in a new GCP organization.
@@ -54,12 +60,13 @@ gcloud compute instances create instance-1 --project=iac-demon --zone=us-central
 # Notes used for reference
 1. https://cloud.google.com/compute/docs/troubleshooting/vm-startup
 
-# Output
+# Output Example
+NOTE: The machine startup process can take up to 10 minutes to complete depending on the specs. 
 
 ## HTTP Load Balancing Lab
 ## Client IP
 
-Your IP address : 35.191.8.9
+Your IP address : - http://34.111.225.89/
 
 ## Hostname
 Server Hostname: vm-wq7j
