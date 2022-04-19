@@ -4,7 +4,7 @@
 - Need to update the following processes to work with terraform cloud workspaces…
 - GitHub - hashicorp/terraform-provider-google: Terraform Google Cloud Platform provider
 
-![Overview Drawing](CCF_IaC_GCP_Demo_Gliffy.png)
+![Overview Drawing](IaC_GCP_Demo_Gliffy.png)
 
 ## ToDo list
 - add https with letsencrypt https://bitrock.it/blog/lets-encrypt-with-terraform.html
